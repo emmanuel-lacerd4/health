@@ -5,6 +5,7 @@ APP para quem deseja acompanhar de forma simples e direta diversas métricas de 
 - IMC (Índice de massa corporal)
 - FCM (Frequência cardíaca máxima)
 - GET (Gasto energético total - calorias por dia)
+- TMB (Taxa metabalocia Bassal)
 - Água (litros por dia)
 
 imc = peso / (altura * altura)
@@ -26,10 +27,10 @@ Homens: tmb = 66 + (13.7 x peso em quilogramas) + (5 x altura em centímetros) �
 Mulheres: tmb = 655 + (9.6 X peso em quilogramas) + (1.8 X altura em centímetros) – (4.7 x idade em anos)
 
 Homens:
-get = (66 + (13.7 * peso) + (5 * altura) – (6.8 * idade)) * valor
+get = (66 + (13.7 * peso) + (5 * altura) - (6.8 * idade)) * valor
 
 Mulheres: 
-get = (655 + (9.6 * peso) + (1.8 * altura) – (4.7 * idade)) * valor
+get = (655 + (9.6 * peso) + (1.8 * altura) - (4.7 * idade)) * valor
 
 // Variáveis
 peso, altura, imc, fcm, idade,  fcm, litros, get

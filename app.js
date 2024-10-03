@@ -61,9 +61,33 @@ function calcular() {
         // Consumo de água
         litros = (peso * 35) / 1000
         document.getElementById("agua").innerHTML = `${litros.toFixed(1)} Litros/dia`
+        // get >>>>>>>
+        // Passo 1: capturar o valor da lista (combobox)
+        let lista = document.getElementById('atividade')
+        let valor = Number(lista.options[lista.selectedIndex].value)
+        console.log(valor) // Teste Importante
+
+        //get
+        // Passo 2: executar uma fórmula diferente para o sexo selecionado
+        if (document.getElementById("m") === true) {
+            //console.log("Formula para homens")
+            get = (66 + (13.7 * peso) + (5 * (altura * 100) - (6.8 * idade))) * valor
+        }
+        if (document.getElementById("f") === true) {
+            //console.log("Formula para mulheres")
+            get = (655 + (9.6 * peso) + (1.8 * (altura * 100) - (4.7 * idade))) * valor
+        }
+        console.log(get)
+
+        // Passo 3: exibir o resultado
+        document.getElementById('calorias').innerHTML = `${Math.floor(get)} Calorias/dia`
     }
 }
-
 function limpar() {
-
+    document.getElementById('imc').innerHTML = "IMC"
+    document.getElementById('status').innerHTML = "status"
+    document.getElementById('freq').innerHTML = "FCM"
+    document.getElementById('calorias').innerHTML = "Calorias/dia"
+    document.getElementById('agua').innerHTML = "Litros/dia"
+    document.getElementById('grafico').src = "img/reset.png"
 }
