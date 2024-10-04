@@ -21,7 +21,7 @@ header h1 {
     color: #cc470d;
 }
 
-/* caixas de input number */
+/* Caixas de input number */
 input[type=number] {
     width: 90px;
     padding: 8px;
@@ -81,16 +81,30 @@ hr {
     color: #0d96cc;
 }
 
-/* Coração pulsando */
+.info {
+    display: flex;
+    flex-direction: column;   /* Alinha o coração e o texto "FCM" em coluna */
+    justify-content: center;  /* Centraliza verticalmente */
+    align-items: center;    /* Alinha os elementos à direita */
+    padding-right: 20px;      /* Ajusta a distância da borda direita, se necessário */
+}
+
 .coracao {
     width: 50px;
     height: 50px;
-    position: relative;
+    margin-top: 35px;
+    position: flex;       /* Mantém o ícone relativo ao container */
     transform: rotate(-135deg);
-    z-index: -1;
-    left: 20%;
     animation: pulsar 0.7s infinite alternate;
-    /* Executar a função interna do CSS3 */
+    z-index: -1;
+}
+
+#freq {
+    height: 80px;
+    margin-top: -50px;         /* Espaço entre o coração e o texto */
+    text-align: center;
+    font-size: 1.3em;
+    color: #ffffff;
 }
 
 .quadrado {

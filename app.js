@@ -67,20 +67,19 @@ function calcular() {
         let valor = Number(lista.options[lista.selectedIndex].value)
         console.log(valor) // Teste Importante
 
-        //get
         // Passo 2: executar uma fórmula diferente para o sexo selecionado
-        if (document.getElementById("m") === true) {
+        if (document.getElementById("m").checked === true) {
             //console.log("Formula para homens")
             get = (66 + (13.7 * peso) + (5 * (altura * 100) - (6.8 * idade))) * valor
         }
-        if (document.getElementById("f") === true) {
+        if (document.getElementById("f").checked === true) {
             //console.log("Formula para mulheres")
             get = (655 + (9.6 * peso) + (1.8 * (altura * 100) - (4.7 * idade))) * valor
         }
         console.log(get)
 
         // Passo 3: exibir o resultado
-        document.getElementById('calorias').innerHTML = `${Math.floor(get)} Calorias/dia`
+        document.getElementById('calorias').innerHTML = `${Math.floor(get)} Calorias/dias`
     }
 }
 function limpar() {
