@@ -5,4 +5,4 @@ Aplicativo para quem deseja acompanhar de forma simples e direta diversas métri
 Emmanuel L. Nogueira
 
 ## APP - Simulador
-![qrcode]()
+![qrcode](https://github.com/emmanuel-lacerd4/health/blob/main/img/qrcode_health.png)
